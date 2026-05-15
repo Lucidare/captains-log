@@ -74,8 +74,6 @@ public class CaptainsLogPlugin extends Plugin
 	@Override
 	protected void startUp() throws Exception
 	{
-		System.out.println("Captain's log start");
-
 		if (shouldShowOverlay())
 		{
 			overlayManager.add(overlay);
@@ -89,7 +87,6 @@ public class CaptainsLogPlugin extends Plugin
 	@Override
 	protected void shutDown() throws Exception
 	{
-		System.out.println("Captain's log end");
 		overlayManager.remove(overlay);
 		overlayManager.remove(debug);
 	}
